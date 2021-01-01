@@ -1,6 +1,6 @@
 var dog , happyDog
 var foodS,foodStock
-
+var foodImage,food
 
 function preload()
 {
@@ -32,7 +32,7 @@ background(47,80,139)
   
   text("Food Remaining:"+ foodS ,100,100)
 
-  if(keyWentDown === 38){
+  if(keyWentDown(UP_ARROW)){
 
     writeStock(foodS)
     dog.addImage(dogH)
